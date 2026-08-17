@@ -17,14 +17,14 @@
 
 rustPlatform.buildRustPackage (finalAttrs: {
   pname = "matrix-continuwuity";
-  version = "26.8.0-alpha.1";
+  version = "26.8.0-alpha.1-unstable-2026-08-16";
 
   src = fetchFromGitea {
     domain = "forgejo.ellis.link";
     owner = "continuwuation";
     repo = "continuwuity";
-    tag = "v${finalAttrs.version}";
-    hash = "sha256-Q+5r6Y6sxSK86I8lWUe1wj4hEF1nc9+QJVl7Y+BI+aI=";
+    rev = "e1d7974dbb437d7f5c218f9fa621df10c0aa97b3";
+    hash = "sha256-55NIXtNTVJu2oYYo1Wl+9g+FzXf4zxjk0NTEe+ZTUAA=";
   };
 
   cargoHash = "sha256-5aR319rqAbZeM8Uex68C2TYsxgXcLbBLE8mm8yy2Qks=";
